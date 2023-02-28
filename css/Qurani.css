@@ -1,0 +1,320 @@
+/* Start Variables */
+:root {
+--main-color: bisque;
+--second-color: beige;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+body {
+    background-color: var(--second-color);
+}
+header .container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: var(--main-color);
+}
+header .container .logo {
+    position: relative;
+    width: 260px;
+    height: 95px;
+}
+@media(max-width: 470px) {
+    header .container .logo  {
+        width: 200px;
+    }
+}
+@media(min-width: 470px) {
+    header .container .logo  {
+        width: 200px;
+    }
+}
+@media(min-width: 650px) {
+    header .container .logo {
+        width: 260px;
+    }
+}
+header .container .logo img {
+    position: absolute;
+    height: 95px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+}
+@media(max-width: 470px) {
+    header .container .logo img  {
+        width: 85px;
+        height: 80px;
+    }
+}
+@media(min-width: 470px) {
+    header .container .logo img  {
+        width: 90px;
+        height: 85px;
+    }
+}
+@media(min-width: 650px) {
+    header .container .logo img  {
+        width: 100px;
+        height: 95px;
+    }
+}
+header .container .logo p.eng-p{
+    position: absolute;
+    top: 19px;
+    left: 95px;
+    font-size: 50px;
+
+}
+@media(max-width: 470px) {
+    header .container .logo p.eng-p  {
+        font-size: 25px;
+        top: 28px;
+        left: 85px;
+    }
+}
+@media(min-width: 470px) {
+    header .container .logo p.eng-p  {
+        font-size: 30px;
+        top: 28px;
+    }
+}
+@media(min-width: 650px) {
+    header .container .logo p.eng-p {
+        font-size: 50px;
+        top: 19px;
+    }
+}
+header nav {
+position: relative;
+width: 320px;
+}
+@media(max-width: 470px) {
+    header nav {
+        display: none;
+    }
+}
+@media(min-width: 470px) {
+    header nav {
+        width: 200px;
+    }
+}
+@media(min-width: 650px) {
+    header nav {
+        width: 320px;
+    }
+}
+header nav ul.main-ul {
+display: flex;
+justify-content: space-between;
+top: 40px;
+position: relative;
+}
+header nav ul.main-ul li {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    border-radius: 3px;
+}
+header nav ul.main-ul li:first-child {
+    border: 3px solid black;
+    background-color: chocolate;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+header nav ul.main-ul li a {
+    text-decoration: none;
+    color: black;
+}
+header .container i {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+}
+@media (max-width: 470px) {
+    header .container i {
+        display: block;
+    }
+}
+header .container i:hover + ul.second-ul {
+    display: block;
+}
+header ul.second-ul {
+    display: none;
+    direction: rtl;
+    position: absolute;
+    right: 35px;
+    top: 53px;
+    width: 120px;
+    height: 100px;
+    background-color: darkgray;
+}
+header ul.second-ul:hover {
+    display: block;
+}
+header ul.second-ul li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 12px;
+    transition: 0.4s;
+}
+header ul.second-ul li:first-child {
+    background-color: #868383;
+}
+header ul.second-ul li:not(:last-child) {
+    border-bottom: 1px solid gainsboro;
+}
+header ul.second-ul li:hover {
+    padding-right: 20px;
+}
+header ul.second-ul li a {
+    text-decoration: none;
+    color: black;
+}
+.basmalih .container {
+    background-color: var(--second-color);
+}
+.basmalih .container img {
+    width: 100%;
+}
+/* End Header */
+/* Start Landing */
+.landing .container {
+    background-color: var(--second-color);
+}
+.landing dl {
+    text-align: end;
+    position: relative;
+}
+.landing dl hr {
+width: 2px;
+}
+.landing dl dt {
+    background-color: darkgray;
+    font-size: 25px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+.landing dl span {
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    font-size: 14px;
+}
+.landing dl .content-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr )) ;
+    grid-gap: 5px;
+    direction: rtl;
+}
+.landing dl .content-box a {
+    text-decoration: none;
+    color: black;
+    width: 375px;
+}
+.landing dl .content-box dd {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: 1px solid #0000004f;
+    display: inline-block;
+    width: 375px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+.landing dl .content-box dd p.name {
+    font-size: 17px;
+    font-weight: 600;
+}
+.landing dl .content-box dd p.count {
+    font-size: 12px;
+    color: #777;
+}
+.landing dl .content-box dd p.page {
+    font-size: 13px;
+}
+
+@media(max-width: 376px) {
+    .landing dl .content-box dd {
+        width: 290px;
+    }
+    .landing dl .content-box a {
+        width: 290px;
+    }
+}
+@media(min-width: 376px) {
+    .landing dl .content-box dd {
+        width: 320px;
+    }
+    .landing dl .content-box a {
+        width: 320px;
+    }
+}
+@media(min-width: 441px) {
+    .landing dl .content-box dd {
+        width: 375px;
+    }
+    .landing dl .content-box a {
+        width: 375px;
+    }
+}
+/* End Landing */
+/* Start Footer */
+footer {
+margin-top: 30px;
+background-color: var(--main-color);
+}
+footer .container p {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 4px;
+}
+/* End Footer */
+
+
